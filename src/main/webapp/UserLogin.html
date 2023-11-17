@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: url('Login.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .site-title {
+            margin: 0;
+            font-size: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            text-transform: capitalize;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: black;
+            color: #fff;
+        }
+
+        section {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            width: 300px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            background-color: black;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .content-container {
+            text-align: left;
+            padding: 20px;
+        }
+
+        .highlighted-sentence {
+            background-color: red;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        .highlighted-text {
+            background-color: blue;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+            border-radius:20px;
+        }
+
+        .services {
+            width: 50%;
+        }
+
+        .services h2 {
+            background-color: blue;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 4;
+            margin: 0;
+        }
+
+        .services li {
+            color: #000; /* Changed text color to black */
+            padding: 10px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .contact-line {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="site-title"> &#127973; Keerthi Hospital</h1>
+        <nav>
+            <ul>
+                <li><a href="UserLogin.html">Home</a></li>
+                <li><a href="AdminLogin.html">Admin</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="DoctorLogin.html">Doctor</a></li>
+                <li><a href="StaffLogin.html">Staff</a></li>
+                <li><a href="Introduction.html">About Us</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="login-container">
+            <h2>User Login</h2>
+            <form action="./UserLogin/userlogin" method="post">
+                <div>
+                    <input type="text" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div>
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+            <p>Don't have an account? <a href="registration.html">Sign Up</a></p>
+        </div>
+    </section>
+    <div class="content-container">
+        <h2 class="highlighted-sentence">OUR OUTSTANDING SERVICES</h2>
+        <div class="services-container">
+            <div class="services">
+                <h2 class="highlighted-text">What We Offer</h2>
+                <ul>
+                    <li>DENTAL IMPLANTS</li>
+                    <li>WHITENING</li>
+                    <li>VACCINATIONS</li>
+                    <li>LABORATORY</li>
+                    <li>MEDICAL DRESSAGE</li>
+                    <li>EMERGENCY CONTRACEPTION</li>
+                </ul>
+            </div>
+            <div class="services">
+                <h2 class="highlighted-text">Our Department</h2>
+                <ul>
+                    <li>DENTAL CARE</li>
+                    <li>NEUROLOGY</li>
+                    <li>CARDIAC</li>
+                    <li>HEPATOLOGY</li>
+                    <li>ORTHOPEDICS</li>
+                    <li>MENTAL HEALTH</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <p class="contact-line">Contact Us:</p>
+        <p>Address: Opp.Laxmi Nagar near Police Station Godavarikhani, Karminagar 505209, India</p>
+        <p>Phone: +91 6038905631</p>
+        <p>Email: keerthi.hospital@gmail.com</p>
+    </div>
+</body>
+</html>

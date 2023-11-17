@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: url('StaffLogin.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .site-title {
+            margin: 0;
+            font-size: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            width: 300px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .content-container {
+            text-align: left;
+            padding: 20px;
+        }
+
+        .highlighted-sentence {
+            background-color: red;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        .highlighted-text {
+            background-color: black;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: space between;
+            margin-top: 50px;
+        }
+
+        .services {
+            width: 48%;
+        }
+
+        .contact-line {
+            text-decoration: underline;
+        }
+
+        .forgot-password-link,
+        .signup-link {
+            color: #007BFF;
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">&#127973;Keerthi Hospital</h1>
+        <nav>
+            <ul>
+                <li><a href="UserLogin.html">Home</a></li>
+                 <li><a href="AdminLogin.html">Admin</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="DoctorLogin.html">Doctor</a></li>
+               <li><a href="StaffLogin.html">Staff</a></li>
+                <li><a href="Introduction.html">About Us</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="login-container">
+            <h2>Staff Login</h2>
+            <form action="./Staff/stafflogin" method="post">
+                <div>
+                    <input type="text" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input type="text" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div>
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+            <a class="forgot-password-link" href="forgot-password.html">Forgot Password</a>
+            <a class="signup-link" href="addform_staff2.html">Sign Up</a>
+        </div>
+    </section>
+</body>
+</html>

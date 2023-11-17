@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: url('appointment.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .site-title {
+            margin: 0;
+            font-size: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .appointment-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            width: 300px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+            margin: 0 auto;
+        }
+
+        .appointment-container h2 {
+            color: #333;
+            margin-bottom: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .appointment-container input[type="text"],
+        .appointment-container input[type="number"],
+        .appointment-container select,
+        .appointment-container input[type="datetime-local"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .appointment-container input[type="submit"] {
+            width: 100%;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .appointment-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Keerthi Hospital</h1>
+        <nav>
+            <ul>
+                               <li><a href="UserLogin.html">Home</a></li>
+                              <li><a href="registration.html">Registration</a></li>
+                              <li><a href="Doctor.html">Doctor</a></li>
+                              <li><a href="Staff.html">Staff</a></li>
+                              <li><a href="Introduction.html">About Us</a></li>
+                              <li><a href="help.html">Help</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="appointment-container">
+            <h2>Appointment Form</h2>
+            <form action="./Appointment/addform_appointment" method="post">
+                <div>
+                    <input type="text" id="patientId" name="patientId" placeholder="Patient Id" required>
+                </div>
+                <div>
+                    <input type="text" id="patientName" name="patientName" placeholder="Patient Name" required>
+                </div>
+                <div>
+                    <input type="number" id="patientAge" name="patientAge" placeholder="Patient Age" required>
+                </div>
+                <div>
+                    <select id="patientGender" name="patientGender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" id="doctorId" name="doctorId" placeholder="Doctor Id" required>
+                </div>
+                <div>
+                    <input type="text" id="doctorName" name="doctorName" placeholder="Doctor Name" required>
+                </div>
+                <div>
+                    <input type="datetime-local" id="datetime" name="datetime" required>
+                </div>
+                <div>
+                    <input type="submit" value="Schedule Appointment">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

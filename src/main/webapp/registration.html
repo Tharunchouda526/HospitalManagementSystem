@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: url('registration.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .site-title {
+            margin: 0;
+            font-size: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .registration-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            width: 300px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+            margin: 0 auto;
+        }
+
+        .registration-container h2 {
+            color: #fff; /* Highlight color */
+            background-color: #007BFF; /* Background color */
+            padding: 5px; /* Added padding */
+            border-radius: 5px; /* Added border-radius */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .registration-container input[type="text"],
+        .registration-container input[type="email"],
+        .registration-container input[type="number"],
+        .registration-container input[type="tel"],
+        .registration-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .registration-container input[type="submit"] {
+            width: 100%;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .registration-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Keerthi Hospital</h1>
+        <nav>
+            <ul>
+                <li><a href="login.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="doctor.html">Doctor</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="Introduction.html">About Us</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="registration-container">
+            <h2>Registration Form</h2>
+            <form action="/Patient/addform_patient" method="post">
+                <div>
+                    <input type="text" id="patientName" name="patientName" placeholder="Patient Name" required>
+                </div>
+                <div>
+                    <input type="email" id="patientEmailno" name "patientEmailno" placeholder="Email Address" required>
+                </div>
+                <div>
+                    <input type="number" id="patientAge" name="patientAge" placeholder="Age" required>
+                </div>
+                <div>
+                    <select id="patientGender" name="patientGender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="tel" id="patientPhno" name="patientPhno" placeholder="Phone No" required>
+                </div>
+                <div>
+                    <input type="text" id="patientBloodGroup" name="patientBloodGroup" placeholder="Blood Group" required>
+                </div>
+                <div>
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>

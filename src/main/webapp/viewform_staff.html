@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keerthi Hospital</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('appointment.jpg');
+            background-size: cover; 
+        }
+
+        .container {
+            max-width: 1700px;
+            margin: 0 auto;
+            padding: 0px;
+            background-color: rgba(0, 123, 255, 0.5);
+        }
+
+        .header {
+            text-align: left;
+            padding: 0px;
+        }
+
+        .nav {
+            text-align: right;
+            padding: 0px;
+            list-style: none;
+        }
+
+        .nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .hospital-title {
+            color: white; /* Set the color to white for the hospital title */
+        }
+
+        h1 {
+            color: red; /* Set the color to red for "APPOINTMENT_FORM" */
+        }
+
+        .appointment-links a {
+            text-decoration: none;
+            color:black; /* Link color */
+            padding: 5px 10px; /* Add padding for space around the links */
+        }
+
+        .appointment-links a:hover {
+            background-color: blue; /* Highlight color on hover (red in this example) */
+            color: white; /* Text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="hospital-title">KEERTHI HOSPITAL</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="UserLogin.html">Home</a></li>
+                 <li><a href="AdminLogin.html">Admin</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="doctor.html">Doctor</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="StaffLogin.html">Staff</a></li>
+                <li><a href="Introduction.html">About Us</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h1>LIST OF STAFF DETAILS</h1>
+    
+   <p class="appointment-links">
+       
+        <form action="./staff/viewform_staff" method="GET">
+            <button type="submit">View All Staffs</button>
+        </form>
+    </p>
+    
+     <a href="AdminLogin2.html" style="color: black;">&#x1F6B6;Exit</a>
+    
+</body>
+</html>

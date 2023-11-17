@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('staffSlogin.jpg');
+            background-size: cover;
+        }
+        h1 {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: left;
+            padding: 10px;
+            margin: 0;
+        }
+        .header {
+            background-color: #007BFF;
+            color: #fff;
+            display: flex;
+            justify-content: space between;
+            padding: 10px;
+        }
+        .nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .nav li {
+            margin-left: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        ul li a {
+            text-decoration: none;
+            background-color: #007BFF;
+            color: #fff;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        ul li a:hover {
+            background-color: black;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex: 1;
+        }
+
+        /* CSS rule to change text color to red for specific elements */
+        .container h2 {
+            color: red;
+        }
+
+        /* Additional styling for content below the container */
+        .content-below-container {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>&#127973;KEERTHI HOSPITAL</h1>
+    <div class="header">
+        <div class="nav-container">
+            <ul class="nav">
+                 <li><a href="UserLogin.html">Home</a></li>
+                 <li><a href="AdminLogin.html">Admin</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="DoctorLogin.html">Doctor</a></li>
+                <li><a href="StaffLogin.html">Staff</a></li>
+                <li><a href="Introduction.html">About Us</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div>
+		 <h1 style="color: black; background-color: white;">Welcome to Staff Portal</h1>
+            <h2>Patient Details</h2>
+            <ul>
+                <li><a href="add_patient_staff.html">Add Patient Details</a></li>
+                <li><a href="updateform_patient_staff.html">Update Patient Details</a></li>
+                <li><a href="deleteform_patient_staff.html">Delete Patient Details</a></li>
+                <li><a href="searchform_patient_staff.html">Search Patient Details with Id</a></li>
+                <li><a href="viewform_patient_staff.html">view Patients Lists</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Appointment Details</h2>
+            <ul>
+                <li><a href="addform_appointment_staff.html">Add Appointment Form</a></li>
+                <li><a href="updateform_appointment_staff.html">Update Appointment Form</a></li>
+                <li><a href="deleteform_appointment_staff.html">Delete Appointment Form</a></li>
+                <li><a href="searchform_appointment_staff.html">Search Appointment Form</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Doctor Details</h2>
+            <ul>
+                <li><a href="searchform_doctor_staff.html">search Doctor with Id</a></li>
+                <li><a href="viewform_doctors_staff.html">View Doctors</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content below the container -->
+    
+</body>
+</html>

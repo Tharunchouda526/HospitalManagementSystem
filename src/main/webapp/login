@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: url('Login.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .site-title {
+            margin: 0;
+            font-size: 24px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        header .site-title .hospital-emoji {
+            font-size: 28px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            width: 300px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .content-container {
+            text-align: left;
+            padding: 20px;
+        }
+
+        .highlighted-sentence {
+            background-color: red;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        .highlighted-text {
+            background-color: black;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .services {
+            width: 48%;
+        }
+
+        .contact-line {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">
+            <span class="hospital-emoji">🏥</span> Keerthi Hospital
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="login.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="doctor.html">Doctor</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="login-container">
+            <h2>User Login</h2>
+            <form action="process_login.php" method="post">
+                <div>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div>
+                    <input type="password" id="password" name="password" placeholder="Password" required pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{6,}$" title="Password must be at least 6 characters and contain at least one numeric and one special character (!@#$%^&*)">
+                </div>
+                <div>
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="content-container">
+        <h2 class="highlighted-sentence">OUTSTANDING SERVICES</h2>
+        <div class="services-container">
+            <div class="services">
+                <h2 class="highlighted-text">What We Offer</h2>
+                <ul>
+                    <li>DENTAL IMPLANTS</li>
+                    <li>WHITENING</li>
+                    <li>VACCINATIONS</li>
+                    <li>LABORATORY</li>
+                    <li>MEDICAL DRESSAGE</li>
+                    <li>EMERGENCY CONTRACEPTION</li>
+                </ul>
+            </div>
+            <div class="services">
+                <h2 class="highlighted-text">Our Department</h2>
+                <ul>
+                    <li>DENTAL CARE</li>
+                    <li>OTOLOGY</li>
+                    <li>NEUROLOGY</li>
+                    <li>CARDIAC</li>
+                    <li>HEPATOLOGY</li>
+                    <li>ORTHOPEDICS</li>
+                    <li>MENTAL HEALTH</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="contact-info">
+        <p class="contact-line">Contact Us:-</p>
+        <p>Email: keerthi.hospital@gmail.com</p>
+        <p>Contact No: 6305157518</p>
+        <p>Address: Opp.Chowk Laxmi Nagar- Godavarikhani Karimnagar 505209 India</p>
+    </div>
+</body>
+</html>
